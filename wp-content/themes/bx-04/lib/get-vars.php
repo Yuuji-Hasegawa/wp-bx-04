@@ -54,13 +54,19 @@ function get_thumb()
 function get_author_id()
 {
     global $post;
-    if(!is_404()) {
-        $author_id = $post->post_author;
-        if($author_id === '0') {
-            $author_id = '1';
-        }
+    $author_id = '';
+    if(is_404()) {
+        $author_id = 0;
     } else {
-        $author_id = '0';
+        if($post->post_author) {
+            if($author_id === '0') {
+                $author_id = '1';
+            } else {
+                $author_id = $post->post_author;
+            }
+        } else {
+            $author_id = 0;
+        }
     }
     return $author_id;
 }
@@ -423,6 +429,19 @@ function get_service_list()
             $output .= '<li>' . $services[$i] . '</li>';
         }
         $output .= '<li>その他、上記に係る業務</li></ul>';
+    }
+    if ($output) {
+        return $output;
+    }
+}
+function get_license_list()
+{
+    $licence = get_vars('company', 'licence');
+    $output = '';
+    if ($licence) {
+        for ($i = 0; $i < count($licence); $i++) {
+            $output .= $licence[$i] . '<br />';
+        }
     }
     if ($output) {
         return $output;

@@ -48,6 +48,7 @@
 		"birth": "20YY年MM月dd日",
 		"open": "09:00",
 		"close": "19:00",
+    "access": "JR大阪駅徒歩n分",
     "workday": "平日",
 		"dayoff": "土日祝・年末年始",
 		"service": [
@@ -57,7 +58,11 @@
 			"事業項目4",
 			"事業項目5",
 			"事業項目6"
-		]
+		],
+    "licence": [
+      "xx士（大阪xx士会所属第xxxx号）",
+      "大阪府知事（x）第xxxxxx号 "
+    ]
 	},
 	"term": {
     "company": "BLUE B NOSE",

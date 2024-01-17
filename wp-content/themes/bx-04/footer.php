@@ -3,10 +3,10 @@
  if(!is_front_page()) {
      echo get_breadcrumb();
  }?>
-<div class="o-box o-box--transparent o-center u-bg-primary u-pt-2xl u-pb-2xl">
-  <h2 class="o-stack o-stack--s u-text-center u-mb-m">
-    <span class="c-display-m u-text-weight-b">お問い合わせ</span>
-    <span class="c-content-l u-text-weight-m">ご相談・ご質問は、こちらからお気軽にお問い合わせください。</span>
+<div class="o-box o-box--cta o-center u-bg-qua u-pt-2xl u-pb-2xl">
+  <h2 class="o-stack u-text-center u-mb-m">
+    <span class="c-display-m u-text-weight-b">ご相談・お問い合わせ</span>
+    <span class="c-content-l u-text-weight-m">弊社へのご相談・お問い合わせは、</span>
   </h2>
   <div class="o-stack o-stack--s u-text-center u-mb-m">
     <a href="#" class="o-icon-parent o-icon-parent--text-center c-tel-link c-display-l" target="_blank" rel="noopener">
@@ -20,13 +20,11 @@
         class="u-font-en-con u-text-weight-b"><?php echo get_vars('company', 'tel');?></span>
     </a>
     <span
-      class="c-suppl-l">営業時間&nbsp;<?php echo get_vars('company', 'workday');?>
-      <span
+      class="c-suppl-l">営業時間&nbsp;<?php echo get_vars('company', 'workday');?>&nbsp;<span
         class="u-font-en-con"><?php echo get_vars('company', 'open');?>~<?php echo get_vars('company', 'close');?></span></span>
   </div>
   <div class="u-text-center">
-    <a href="<?php echo home_url('/inquiry/');?>"
-      class="o-box o-box--button o-box--rect-button o-icon-parent">
+    <a href="#" class="o-box o-box--button o-box--rect-button o-box--primary-button o-icon-parent">
       <svg class="o-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
         <!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
         <path
@@ -37,39 +35,51 @@
     </a>
   </div>
 </div>
-<footer class="o-center c-footer u-pt-2xl u-pb-2xl">
-  <div class="o-sidebar u-mb-m">
-    <div class="o-stack o-stack--m o-sidebar__footLeft">
-      <ul class="o-cluster">
-        <li><a class="c-gnav-link c-content-l u-text-weight-b"
-            href="<?php echo home_url('/');?>">トップ</a>
+<footer class="c-footer">
+  <div class="o-center u-bg-primary u-pt-m u-pb-m">
+    <div class="o-stack u-max-item u-block-center">
+      <ul class="o-cluster u-mb-m">
+        <li class="c-ft-item u-text-center"><a class="c-ft-link c-content-m"
+            href="<?php echo home_url('/office/');?>">事務所情報</a>
         </li>
-        <li><a class="c-gnav-link c-content-l u-text-weight-b"
-            href="<?php echo home_url('/company/');?>">会社情報</a>
+        <li class="c-ft-item u-text-center"><a class="c-ft-link c-content-m"
+            href="<?php echo home_url('/terms/');?>">サイト規約</a>
         </li>
-        <li><a class="c-gnav-link c-content-l u-text-weight-b"
-            href="<?php echo home_url('/blog/');?>">ブログ</a>
+        <li class="c-ft-item u-text-center"><a class="c-ft-link c-content-m"
+            href="<?php echo home_url('/privacy-policy/');?>">プライバシーポリシー</a>
         </li>
-        <li><a class="c-gnav-link c-content-l u-text-weight-b"
-            href="<?php echo home_url('/news/');?>">お知らせ</a>
-        </li>
-        <li><a class="c-gnav-link c-content-l u-text-weight-b"
+        <li class="c-ft-item u-text-center"><a class="c-ft-link c-content-m"
             href="<?php echo home_url('/inquiry/');?>">お問い合わせ</a>
         </li>
       </ul>
-      <ul class="o-cluster">
-        <li><a class="c-gnav-link c-content-m"
-            href="<?php echo home_url('/terms/');?>">サイト規約</a>
-        </li>
-        <li><a class="c-gnav-link c-content-m"
-            href="<?php echo home_url('/privacy-policy/');?>">プライバシーポリシー</a>
-        </li>
-      </ul>
-    </div>
-    <div class="o-sidebar__footRight">
-      <h3 class="c-display-xs u-text-weight-b u-font-en-con">Follow Us</h3>
-      <div class="o-cluster">
-        <a class="c-text-link c-display-m"
+      <a href="<?php echo home_url('/');?>"
+        class="o-icon-parent o-icon-parent--center o-icon-parent--text-center c-logo-link">
+        <svg class="o-icon c-display-l" width="670" height="403" viewBox="0 0 670 403" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path d="M586.221 268.039L502.504 402.075L418.733 268.039H586.221Z" fill="#69AEE0"></path>
+          <path d="M334.996 402.075L418.744 268.029L502.492 402.075H334.996Z" fill="#70B1E1"></path>
+          <path d="M418.723 268.039L334.996 402.075L251.246 268.039H418.723Z" fill="#92CAEF"></path>
+          <path d="M167.497 402.075L251.245 268.029L334.993 402.075H167.497Z" fill="#92CAEF"></path>
+          <path d="M0 402.075L83.7487 268.039L167.497 402.085L0 402.075Z" fill="#7EBAE6"></path>
+          <path d="M670 134.035L586.252 268.039L502.491 134.035H670Z" fill="#85C1EB"></path>
+          <path d="M418.743 268.039L502.481 134.035L586.218 268.039H418.743Z" fill="#7EBAE6"></path>
+          <path d="M502.492 134.035L418.744 268.039L334.996 134.035H502.492Z" fill="#7BB8E5"></path>
+          <path d="M251.246 268.039L334.996 134.035L418.723 268.039H251.246Z" fill="#85C1EB"></path>
+          <path d="M334.993 134.035L251.245 268.039L167.497 134.035H334.993Z" fill="#73B2E2"></path>
+          <path d="M83.749 268.039L167.498 134.035L251.225 268.039H83.749Z" fill="#67A0D3"></path>
+          <path d="M502.491 134.035L586.231 0L669.989 134.045L502.491 134.035Z" fill="#99D2F3"></path>
+          <path d="M334.996 134.035L418.744 0L502.492 134.045L334.996 134.035Z" fill="#82BEE9"></path>
+          <path d="M167.497 134.035L251.245 0L334.993 134.045L167.497 134.035Z" fill="#73B2E2"></path>
+          <path d="M251.225 0L167.498 134.035L83.749 0H251.225Z" fill="#65A5DA"></path>
+        </svg>
+        <span class="c-display-m u-font-logo u-flex-shrink-none">BLUE B NOSE</span>
+      </a>
+      <span class="c-content-l u-text-center u-mt-m">〒<span
+          class="u-font-en-con"><?php echo get_vars('company', 'zip');?></span>
+        <?php echo get_vars('company', 'address');?></span>
+      <h3 class="c-display-s u-text-weight-m u-font-en-con u-max-item u-block-center u-mt-m">Follow Us</h3>
+      <div class="o-cluster o-cluster--center">
+        <a class="c-sns-link c-display-m"
           href="<?php echo get_vars('sns', 'fb');?>"
           target="_blank" rel="noopener" aria-label="Goto Facebook">
           <svg class="o-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -79,17 +89,17 @@
               fill="currentColor"></path>
           </svg>
         </a>
-        <a class="c-text-link c-display-m"
+        <a class="c-sns-link c-display-m"
           href="<?php echo get_vars('sns', 'tw');?>"
           target="_blank" rel="noopener" aria-label="Goto Twitter">
           <svg class="o-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
             <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
             <path
               d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"
-              fill="currentColor" />
+              fill="currentColor"></path>
           </svg>
         </a>
-        <a class="c-text-link c-display-m"
+        <a class="c-sns-link c-display-m"
           href="<?php echo get_vars('sns', 'instagram');?>"
           target="_blank" rel="noopener" aria-label="Goto Instagram">
           <svg class="o-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
@@ -102,33 +112,7 @@
       </div>
     </div>
   </div>
-  <div class="o-stack o-stack--s u-mb-l">
-    <a href="<?php echo home_url('/');?>"
-      class="o-icon-parent o-icon-parent--center o-icon-parent--footer-logo u-max-item">
-      <svg class="o-icon" width="670" height="403" viewBox="0 0 670 403" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M586.221 268.039L502.504 402.075L418.733 268.039H586.221Z" fill="#69AEE0"></path>
-        <path d="M334.996 402.075L418.744 268.029L502.492 402.075H334.996Z" fill="#70B1E1"></path>
-        <path d="M418.723 268.039L334.996 402.075L251.246 268.039H418.723Z" fill="#92CAEF"></path>
-        <path d="M167.497 402.075L251.245 268.029L334.993 402.075H167.497Z" fill="#92CAEF"></path>
-        <path d="M0 402.075L83.7487 268.039L167.497 402.085L0 402.075Z" fill="#7EBAE6"></path>
-        <path d="M670 134.035L586.252 268.039L502.491 134.035H670Z" fill="#85C1EB"></path>
-        <path d="M418.743 268.039L502.481 134.035L586.218 268.039H418.743Z" fill="#7EBAE6"></path>
-        <path d="M502.492 134.035L418.744 268.039L334.996 134.035H502.492Z" fill="#7BB8E5"></path>
-        <path d="M251.246 268.039L334.996 134.035L418.723 268.039H251.246Z" fill="#85C1EB"></path>
-        <path d="M334.993 134.035L251.245 268.039L167.497 134.035H334.993Z" fill="#73B2E2"></path>
-        <path d="M83.749 268.039L167.498 134.035L251.225 268.039H83.749Z" fill="#67A0D3"></path>
-        <path d="M502.491 134.035L586.231 0L669.989 134.045L502.491 134.035Z" fill="#99D2F3"></path>
-        <path d="M334.996 134.035L418.744 0L502.492 134.045L334.996 134.035Z" fill="#82BEE9"></path>
-        <path d="M167.497 134.035L251.245 0L334.993 134.045L167.497 134.035Z" fill="#73B2E2"></path>
-        <path d="M251.225 0L167.498 134.035L83.749 0H251.225Z" fill="#65A5DA"></path>
-      </svg>
-      <span class="c-logo-label c-logo-label--footer u-font-logo u-flex-shrink-none">BLUE B NOSE</span>
-    </a>
-    <span class="c-suppl-l u-text-secondary">〒<span
-        class="u-font-en-con"><?php echo get_vars('company', 'zip');?></span>
-      <?php echo get_vars('company', 'address');?></span>
-  </div>
-  <p class="c-suppl-m u-font-en-con u-text-center">
+  <p class="c-suppl-m u-font-en-con u-text-center u-pt-l u-pb-l u-text-primary">
     <?php echo get_vars('site', 'copyright');?>
   </p>
 </footer>
