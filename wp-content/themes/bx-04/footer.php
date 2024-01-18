@@ -38,7 +38,7 @@
 <footer class="c-footer">
   <div class="o-center u-bg-primary u-pt-m u-pb-m">
     <div class="o-stack u-max-item u-block-center">
-      <ul class="o-cluster u-mb-m">
+      <ul class="o-cluster o-cluster--gap-s u-mb-m">
         <li class="c-ft-item u-text-center"><a class="c-ft-link c-content-m"
             href="<?php echo home_url('/office/');?>">事務所情報</a>
         </li>
